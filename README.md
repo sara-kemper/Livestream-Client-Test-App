@@ -4,6 +4,7 @@
 3. Clone the respository listed below and install the dependencies 
 
 ```
+cd server
 git clone https://github.com/kyriesent/node-rtsp-stream.git
 cd node-rtsp-stream
 npm install (should pass all of the tests)
@@ -22,9 +23,9 @@ npm install (should pass all of the tests)
 
 ```ffmpeg -rtbufsize 2000M -re -stream_loop -1 -f dshow -i video="<Fill in camera here>" -f rtsp -rtsp_transport tcp rtsp://localhost:8554/livestream ```
 
-3. Run client (cd to client folder and write npm start)
+3. cd to server and run ``` node index.js ```
 
-4. cd to server and run ``` node index.js ```
+4. Run client (cd to client folder and write npm start) -> don't forget to npm install before running for the first time
 
 ## How does it work?
 
